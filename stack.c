@@ -14,12 +14,12 @@ stack_t *new = NULL;
 new = malloc(sizeof(stack_t));
 if (new == NULL)
 {
-printf("Error: malloc failed\n");
+fprintf(stderr, "Error: malloc failed\n");
 exit(EXIT_FAILURE);
 }
 if (n == NULL)
 {
-printf("L%d: usage: push integer\n", line_number);
+fprintf(stderr, "L%d: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
 

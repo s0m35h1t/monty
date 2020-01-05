@@ -11,7 +11,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-printf("L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
@@ -31,7 +31,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-printf("L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
@@ -51,13 +51,13 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-printf("L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
 if (top_value == 0)
 {
-printf("L%d: division by zero\n", line_number);
+fprintf(stderr, "L%d: division by zero\n", line_number);
 exit(EXIT_FAILURE);
 }
 second_value = (*stack)->next->n;
@@ -77,7 +77,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-printf("L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
@@ -97,13 +97,13 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-printf("L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
 if (top_value == 0)
 {
-printf("L%d: division by zero\n", line_number);
+fprintf(stderr, "L%d: division by zero\n", line_number);
 exit(EXIT_FAILURE);
 }
 second_value = (*stack)->next->n;
