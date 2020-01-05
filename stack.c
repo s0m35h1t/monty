@@ -23,18 +23,15 @@ if (n == NULL)
 fprintf(stderr, "L%d: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
-if (n[0] != '-' || (n[0] < 48 || n[0] > 57))
+for (i = 0; n[i]; i++)
 {
-printf("L%d: usage: push integer\n", line_number);
-exit(EXIT_FAILURE);
-}
-for (i = 1; n[i]; i++)
-{
-if (n[i] < 48 || n[i] > 57)
-{
-printf("L%d: usage: push integer\n", line_number);
-exit(EXIT_FAILURE);
-}
+    if (n[0] == '-' && i == 0)
+        continue;
+    if (n[i] < 48 || n[i] > 57)
+    {
+        printf("L%d: usage: push integer\n", line_number);
+        exit(EXIT_FAILURE);
+    }
 }
 new->n = atoi(n);
 new->prev = NULL;
