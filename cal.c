@@ -40,7 +40,7 @@ pop(stack, line_number);
 (*stack)->n = second_value - top_value;
 }
 /**
- * _div - divides top two elements of stack
+ * _div - divides top two elements off stack
  * @stack: pointer to stack
  * @line_number: line number of instruction
  * Return: void, exit with -1 on failure
