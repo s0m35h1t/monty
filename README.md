@@ -2,8 +2,6 @@
 
 ### Low-level programming & Algorithm  Data structures and Algorithms
 
-
-
 ## The Monty language :
 
    Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
@@ -39,53 +37,73 @@
     -   Any error message must be printed on `stderr`
 
 ## Project Breakdown
+
 #### 0. push, pall
     Implement the `push` and `pall` opcodes.
 #### 1. pint
     Implement the `pint` opcode.
+
 #### 2. pop
     Implement the `pop` opcode.
+
 #### 3. swap
     Implement the `swap` opcode.
+
 #### 4. add
     Implement the `add` opcode.
+
 #### 5. nop
     Implement the `nop` opcode.
+
 #### 6. sub
     Implement the `sub` opcode.
+
 #### 7. div
     Implement the `div` opcode.
+
 #### 8. mul
     Implement the `mul` opcode.
+
 #### 9. mod
     Implement the `mod` opcode.
+
 #### 10. comments
     Every good language comes with the capability of commenting. When the first non-space character of a line is `#`, treat this line as a comment (dont do anything).
+
 #### 11. pchar
     Implement the `pchar` opcode.
+
 #### 12. pstr
     Implement the `pstr` opcode.
+
 #### 13. rotl
     Implement the `rotl` opcode.
+
 #### 14. rotr
     Implement the `rotr` opcode.
+
 #### 15. stack, queue
     Implement the `stack` and `queue` opcodes.
+
 #### 16. Holberton
     Write a Brainf*ck script that prints `Holberton`, followed by a new line.
      -   All your Brainf*ck files should be stored inside the `bf` sub directory
      -   You can install the `bf` interpreter to test your code: `sudo apt-get install bf`
      -   Read: [Brainf*ck](https://intranet.hbtn.io/rltoken/3YPS6XwLxjZp4qnguP1HYg "Brainf*ck")
+
 #### 17. Add two digits
      Add two digits given by the user.
        -   Read the two digits from stdin, add them, and print the result
        -   The total of the two digits with be one digit-long (<10)
+
 #### 18. Multiplication
     Multiply two digits given by the user.
   -   Read the two digits from stdin, multiply them, and print the result
   -   The result of the multiplication will be one digit-long (<10)
+
 #### 19. Multiplication level up
    Multiply two digits given by the user.
+
 ## Authors
    Current implementation:
     - **[Adib Grouz](https://github.com/s0m35h1t)**
