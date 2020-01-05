@@ -6,7 +6,8 @@
 
 ## The Monty language :
 
-Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+   Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+
 ## The monty program
 
     -   Usage: `monty file`
@@ -23,16 +24,20 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
     -   an error occured
     -   If you cant malloc anymore, print the error message `Error: malloc failed`, followed by a new line, and exit with status `EXIT_FAILURE`.
     -   You have to use `malloc` and `free` and are not allowed to use any other function from `man malloc` (realloc, calloc, )
- ### Compilation & Output
+
+### Compilation & Output
 
    -   Your code will be compiled this way:
+
    ```
  
    $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 
    ```
+
     -   Any output must be printed on `stdout`
     -   Any error message must be printed on `stderr`
+
 ## Project Breakdown
 #### 0. push, pall
     Implement the `push` and `pall` opcodes.
