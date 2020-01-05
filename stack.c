@@ -10,6 +10,7 @@
 void push(stack_t **stack, char *n, unsigned int line_number)
 {
 stack_t *new = NULL;
+int i;
 
 new = malloc(sizeof(stack_t));
 if (new == NULL)
@@ -22,7 +23,19 @@ if (n == NULL)
 fprintf(stderr, "L%d: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
-
+if (n[0] != '-' || (n[i] < 48 || n[i] > 57))
+{
+printf("L%d: usage: push integer\n", line_number);
+exit(EXIT_FAILURE);
+}
+for (i = 1; n[i]; i++)
+{
+if (n[i] < 48 || n[i] > 57)
+{
+printf("L%d: usage: push integer\n", line_number);
+exit(EXIT_FAILURE);
+}
+}
 new->n = atoi(n);
 new->prev = NULL;
 new->next = NULL;
