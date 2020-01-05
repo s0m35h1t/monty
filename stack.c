@@ -46,7 +46,7 @@ int tmp;
 
 if (len(stack) < 2)
 {
-printf("L%d: can't swap, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't swap, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 
@@ -68,7 +68,7 @@ stack_t *next;
 
 if (stack == NULL || *stack == NULL)
 {
-printf("L%d: can't pop an empty stack\n", line_number);
+fprintf(stderr, "L%d: can't pop an empty stack\n", line_number);
 exit(EXIT_FAILURE);
 }
 next = (*stack)->next;
