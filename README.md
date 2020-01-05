@@ -84,6 +84,5 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 ## Authors
    Current implementation:
     - **[Adib Grouz](https://github.com/s0m35h1t)**
-
     - **[Sami Lafine](https://github.com/afinesami)**
 			     
