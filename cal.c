@@ -31,7 +31,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't sub, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
@@ -51,7 +51,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
@@ -77,7 +77,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't mul, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
@@ -97,7 +97,7 @@ int top_value, second_value;
 
 if (len(stack) < 2)
 {
-fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
+fprintf(stderr, "L%d: can't mod, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
 top_value = (*stack)->n;
