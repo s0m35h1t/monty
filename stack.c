@@ -23,7 +23,7 @@ if (n == NULL)
 fprintf(stderr, "L%d: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
-if (n[0] != '-' || (n[i] < 48 || n[i] > 57))
+if (n[0] != '-' || (n[0] < 48 || n[0] > 57))
 {
 printf("L%d: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
